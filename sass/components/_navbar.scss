@@ -1,0 +1,71 @@
+.navbar{
+    .row{
+        display: flex;
+        justify-content: space-between;
+    }
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    backface-visibility: hidden;
+    padding: 2rem 0rem;
+    background-image: linear-gradient(to top,var(--color-4),var(--color-3));
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    &__nav{
+        flex: 50%;
+        max-width: 50%;
+        list-style: none;
+        li{
+            display: inline;
+            &:not(:last-of-type){
+                margin-right: 6rem;
+            }
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            position: relative;
+            padding-bottom:.5rem;
+        }
+        a::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            width: 0;
+            background-color: var(--color-2);
+            transition: all .2s ease;
+            backface-visibility: hidden;
+        }
+        a:hover::after{
+            width: 50%;
+            transform: translateX(100%);
+        }
+        a::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 3px;
+            width: 0;
+            background-color: var(--color-3);
+            transition: all .2s ease;
+            backface-visibility: hidden;
+
+        }
+        a:hover::before{
+            width: 50%;
+            transform: translateX(-100%);
+        }
+    }
+    &__logo{
+        flex: 20%;
+        max-width: 20%;
+        padding-left: 8.5%;
+    }
+}

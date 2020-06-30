@@ -1,0 +1,48 @@
+.header{
+    height: 100vh;
+    background-color: var(--color-1);
+    color: var(--color-4);
+    &__content{
+        position: absolute;
+        top: 30%;
+        left: 8.5%;
+        width: 60%;
+    }
+    &__heading{
+        margin-bottom: 3rem;
+        font-size: 5rem;
+    }
+    &__text{
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 3rem;
+    }
+    &__input{
+        outline: none;
+        border: 3px solid var(--color-4);
+        padding: 1rem;
+        font-size: var(--default-fontsize);
+        color: var(--color-4);
+        font-weight: 700;
+        width: 80%;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    &__btn{
+        display: inline-block;
+        color:white;
+        text-decoration: none;
+        background-color: var(--color-4);
+        padding: 1.1rem;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border: 1px solid transparent;
+        transition: all .3s ease;
+    }
+    &__btn:hover{
+        color:var(--color-4);
+        background-color: var(--color-1);
+        border: 1px solid var(--color-4);
+    }
+}

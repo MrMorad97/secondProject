@@ -1,0 +1,17 @@
+{
+  "name": "second-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass index.scss index.css -w"
+  },
+  "author": "MrMorad97",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
